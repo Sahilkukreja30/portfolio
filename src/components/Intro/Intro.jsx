@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import './Intro.css'
 import gsap from 'gsap';
+import Image from '../../Assets/intro.jpg';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 function Intro() {
 
@@ -30,7 +31,7 @@ function Intro() {
         <div className="marquee" ref={marqueeRef}><span>About me</span></div>
         <div className="intro">
             <div className='image'>
-                <img src="src\components\Intro\file (1).jpg" alt="" />
+                <img src={Image} alt="" />
             </div>
             <h3>
             Hello, <b>I'm Sahil Kukreja!</b> A curious Web Developer and Tech Enthusiast who loves building innovative, efficient, and scalable solutions. I specialize in React.js, Node.js, and crafting dynamic user interfaces.Check out my projects and let’s bring ideas to life!
