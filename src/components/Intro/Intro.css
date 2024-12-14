@@ -1,0 +1,39 @@
+.about_main {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee {
+  display: inline-flex;
+}
+.marquee span {
+  font-size: 13vw;
+  white-space: nowrap;
+  background: linear-gradient(90deg, #434343, #000000); /* Background gradient */
+  -webkit-background-clip: text; 
+  color: transparent;
+}
+
+.intro{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* top: 100px;
+    left: 650px; */
+    margin-left: 80px;
+    height: 500px;
+    width: 80vw;
+    gap: 200px;
+}
+
+.intro h3{
+    line-height: 2;
+    white-space:wrap;
+    font-weight: 400;
+}
+.intro img{
+    height: 350px;
+    width: 350px;
+    border-radius: 25px;
+}
