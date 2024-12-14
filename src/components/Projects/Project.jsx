@@ -4,6 +4,7 @@ import { useRef } from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import gsap from 'gsap';
+import Image from '../../assets/anoy.jpg';
 function Project() {
     const marqueeRef = useRef();
     useEffect(()=>{
@@ -30,7 +31,7 @@ function Project() {
     <div className='project_main'>
         <div className="marquee" ref={marqueeRef}><span>WORK</span></div>
         <div className="project">
-            <img src="src\components\Projects\anoy.jpg" alt="" />
+            <img src={Image} alt="" />
             <p>Anoymous wave</p>
         </div>
         <div className="description">
