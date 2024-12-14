@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import './Intro.css'
 import gsap from 'gsap';
-import Image from '../../Assets/intro.jpg';
+import Image from '../../assets/intro.jpg';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 function Intro() {
 
