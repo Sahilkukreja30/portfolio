@@ -3,22 +3,24 @@
     color: #fff;
     position: fixed;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-end;
     gap: 10px;
     width: 100%;
     top:20px;
-    background-color: black;
-    border-radius: 80px;
+    
   }
   
   .logo {
     font-size: 1.5rem;
+    right: 350px;
     font-weight: bold;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
   }
   
   .menu-icon {
-    font-size: 2rem;
+    font-size: 3rem;
     cursor: pointer;
     display: none;
   }
@@ -31,7 +33,8 @@
   }
   
   .menu-item {
-    font-size: 1.2rem;
+    right: 40px;
+    font-size: 1.4rem;
     cursor: pointer;
     position: relative;
     overflow: hidden;
@@ -57,7 +60,7 @@
   
   .menu-item:hover {
     scale: 1.1;
-  }
+  } 
   
   @media (max-width: 768px) {
     .menu-icon {

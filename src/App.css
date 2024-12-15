@@ -1,14 +1,32 @@
+:root {
+    --maxgreenyellow: #cde052; /* Declare the custom property */
+  }
+  
+
+
 
 body{
     height: 100%;
     width: 100%;
     overflow-x: hidden;
     
-    background: #606c88;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #3f4c6b, #606c88);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #3f4c6b, #606c88); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: rgb(19, 22, 24);
+
+
     cursor: none;
 
 
+}
+
+.background{
+    position:absolute;
+    top: 550px;
+    width: 100%;
+}
+
+.background2{
+    position:absolute;
+    top: 270px;
+    left: 70%;
 }
 

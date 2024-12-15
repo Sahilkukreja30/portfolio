@@ -2,24 +2,9 @@ import React, { useEffect } from 'react'
 import "./Home.css";
 import gsap from 'gsap';
 import Image from '../../assets/main.jpg';
+
 function Home() {
-  const image = document.querySelector("img");
-  const onMouseEnter = () => {
-    gsap.to(image, {
-      scale: 2.5,  
-      duration: 0.3,
-    });
-  };
-  const onMouseLeave = () => {
-    gsap.to(image, {
-      scale: 1, 
-      duration: 0.3,
-    });
-  };
-  document.querySelectorAll("img").forEach((el) => {
-    el.addEventListener('mouseenter', onMouseEnter);
-    el.addEventListener('mouseleave', onMouseLeave);
-  });
+
 
   return (
     <>
@@ -32,7 +17,7 @@ function Home() {
         </div>
         <p className='text1'>Hey,I AM</p>
         <h1 className='text2'>TECH ENTHUSIAST</h1>
-        <button>Send Message</button>
+        <button><a href="https://www.linkedin.com/in/sahil-kukreja-943993289/">Send Message</a></button>
     </div>
     
     </>

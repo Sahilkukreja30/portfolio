@@ -1,12 +1,28 @@
 import React, { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 import "./Navbar.css";
-
+import { ScrollTrigger} from "gsap/all";
+import { useGSAP } from '@gsap/react';
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+gsap.registerPlugin(useGSAP);
+gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollToPlugin);
 const Navbar = () => {
+
+  const section1Ref = useRef(null);
+  const section2Ref = useRef(null);
   const navRef = useRef(null);
   const menuRef = useRef([]);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const item = document.querySelector("li");
+  console.log(item);
+  const scrollToSection = (id) => {
+    gsap.to(window, {
+      duration: 1, // Adjust the duration as needed
+      scrollTo: { y: `#${id}`, offsetY: 50 }, // Offset can be adjusted as needed
+      ease: 'power2.out',
+    });
+  };
   useEffect(() => {
     // Navbar slide-in animation
     gsap.fromTo(
@@ -28,6 +44,15 @@ const Navbar = () => {
       }
     );
   }, []);
+
+  useGSAP(()=>{
+    gsap.fromTo(navRef.current,{y:0},{y:-200,duration:3,scrollTrigger:{
+      trigger:navRef.current,
+      start:"top -30%",
+      // markers:true,
+      scrub:1,
+    }})
+  })
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -54,6 +79,7 @@ const Navbar = () => {
           "Projects",
         ].map((item, index) => (
           <li
+            onClick={() => scrollToSection('project')}
             key={index}
             ref={(el) => (menuRef.current[index] = el)}
             className="menu-item"

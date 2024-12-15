@@ -2,18 +2,21 @@
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
+  position: relative;
 }
 
 .marquee {
   display: inline-flex;
 }
-.marquee span {
+.marquee h2 {
+  color: transparent; /* Makes the text transparent */
+  -webkit-background-clip: text; /* Clips the background to the text */
+  background-clip: text;
+    background-image: linear-gradient(135deg, #ff0040, #ff99cc);
   font-size: 13vw;
   white-space: nowrap;
-  background: linear-gradient(90deg, #434343, #000000); /* Background gradient */
-  -webkit-background-clip: text; 
-  color: transparent;
 }
+
 
 .intro{
     display: flex;
@@ -31,9 +34,17 @@
     line-height: 2;
     white-space:wrap;
     font-weight: 400;
+    z-index: 2;
 }
 .intro img{
     height: 350px;
     width: 350px;
     border-radius: 25px;
+}
+
+.bg-services{
+  position: absolute;
+  top: 600px;
+  left: 1000px;
+  
 }

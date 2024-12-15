@@ -5,12 +5,13 @@
 .marquee {
     display: inline-flex;
   }
-  .marquee span {
+  .marquee h1 {
     font-size: 13vw;
     white-space: nowrap;
-    background: linear-gradient(90deg, #434343, #000000); /* Background gradient */
-    -webkit-background-clip: text; 
-    color: transparent;
+    background: linear-gradient(90deg, #ff7eb3, #ff758c, #a4ffac, #73b6ff);
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 .email a{
     text-decoration: none;

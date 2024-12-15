@@ -1,12 +1,16 @@
+.project_main{
+  position:relative;
+}
 .marquee {
     display: inline-flex;
   }
-  .marquee span {
+  .marquee h1 {
     font-size: 13vw;
     white-space: nowrap;
-    background: linear-gradient(90deg, #434343, #000000); /* Background gradient */
-    -webkit-background-clip: text; 
-    color: transparent;
+    background: linear-gradient(90deg, #ff7eb3, #ff758c, #a4ffac, #73b6ff);
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 .project{
     display: flex;
@@ -20,6 +24,7 @@
     object-fit: contain;
     height: 500px;
     width: 600px;
+    z-index: 2;
   }
   .project p{
     position: relative;
@@ -36,3 +41,9 @@
     bottom: 60px;
     width: 300px;
   }
+
+  .bg-services2{
+    position:absolute;
+    top: 500px;
+    width: 100%;
+}

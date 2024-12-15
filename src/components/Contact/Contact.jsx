@@ -24,7 +24,7 @@ function Contact() {
     },[]);
   return (
     <div className='contact_main'>
-        <div className="marquee" ref={marqueeRef}><span>Contact</span></div>
+        <div className="marquee" ref={marqueeRef}><h1>Contact</h1></div>
         <div className="email">
             <a href="">sahilkukreja4321@gmail.com</a>
         </div>
